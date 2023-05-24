@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    height: clamp(70px, 5.5vw, 130px);
+    background-color: #2E294E;
+}
+
+.menuBarWrapper {
+    height: clamp(25px, 7vw, 25px);
+    aspect-ratio: 1.1 / 1;
+}
+
+.menuBar {
+    height: clamp(6px, 1vw, 20px);
+    width: 100%;
+    background-color: white;
+}
+
+.logo {
+    width: clamp(70px, 5vw, 150px);
+}
+
+.catContainer {
+    height: clamp(30px, 2.7vw, 70px);
+    background-color: #2274A5;
+}
+
+.catItem {
+    font-size: clamp(0.7em, 1.2vw, 1.6em);
+    color: white;
+}
+
+.normalWidth {
+    width: clamp(340px, 95%, 2134px);
+}
+
+.turismo {
+    background-image: url('../assets/turismo.png');
+    background-position: center;
+    background-size: contain;
+}
+
+.esportes {
+    background-image: url('../assets/sports.png');
+    background-position: center;
+    background-size: contain;
+}
+
+.educacao {
+    background-image: url('../assets/education.png');
+    background-position: center;
+    background-size: contain;
+}
+
+.politica {
+    background-image: url('../assets/politics.png');
+    background-position: center;
+    background-size: contain;
+}
+
+.ciencia {
+    background-image: url('../assets/science.png');
+    background-position: center;
+    background-size: contain;
+}
+
+.tecnologia {
+   background-image: url('../assets/electronics.png'); 
+   background-position: center;
+   background-size: contain;
+}
+
+.recentImage {
+    aspect-ratio: 1 / 1;
+    width: clamp(30px, 30%, 115px);
+}
+
+.recentCard {
+    
+}
