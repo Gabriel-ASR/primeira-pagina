@@ -36,47 +36,28 @@
     width: clamp(340px, 95%, 2134px);
 }
 
-.turismo {
-    background-image: url('../assets/turismo.png');
-    background-position: center;
-    background-size: contain;
-}
-
-.esportes {
-    background-image: url('../assets/sports.png');
-    background-position: center;
-    background-size: contain;
-}
-
-.educacao {
-    background-image: url('../assets/education.png');
-    background-position: center;
-    background-size: contain;
-}
-
-.politica {
-    background-image: url('../assets/politics.png');
-    background-position: center;
-    background-size: contain;
-}
-
-.ciencia {
-    background-image: url('../assets/science.png');
-    background-position: center;
-    background-size: contain;
-}
-
-.tecnologia {
-   background-image: url('../assets/electronics.png'); 
-   background-position: center;
-   background-size: contain;
-}
-
-.recentImage {
-    aspect-ratio: 1 / 1;
-    width: clamp(30px, 30%, 115px);
-}
-
 .recentCard {
-    
+    width: clamp(125px, 15vw, 350px);
+    height: clamp(60px, 20vw, 350px);
+}
+
+.recentContent {
+    font-size: 0.5em;
+    padding: 0;
+    width: 50%;
+}
+
+.recentContent h5 {
+    font-size: 1.3em;
+    margin: 0;
+}
+
+.recentContent p {
+    margin: 0;
+    padding: 0;
+    font-size: 0.7em;
+}
+
+.contentContainer {
+    overflow: hidden;
 }

@@ -1,6 +1,6 @@
 const CatList = () => {
     return (
-        <ul className="list-unstyled catList d-flex justify-content-around h-100 align-items-center">
+        <ul className="list-unstyled catList d-flex justify-content-between h-100 align-items-center">
             <li className="catItem">Esportes</li>
             <li className="catItem">Educação</li>
             <li className="catItem">Economia</li>

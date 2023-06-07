@@ -1,10 +1,13 @@
 const RecentCard = (props) => {
     return(
         <div className="d-flex align-items-center gap-2 recentCard border border-danger">
-            <div className={props.image + " recentImage"}></div>
-            <div >
+            <img className="w-50" src={props.image}/>
+            <div className="recentContent">
                 <h5>{props.title}</h5>
-                <p>{props.content}</p>
+                <div>
+                    <p>{props.content}</p> 
+                </div>
+                <p>Ler Mais...</p>
             </div>
         </div>
     )
