@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@900&family=Battambang:wght@900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+
 * {
     box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
 }
 
 .header {
@@ -28,7 +34,7 @@
 }
 
 .catItem {
-    font-size: clamp(0.7em, 1.2vw, 1.6em);
+    font-size: clamp(0.7em, 1.2vw, 1.1em);
     color: white;
 }
 
@@ -37,12 +43,11 @@
 }
 
 .recentCard {
-    width: clamp(125px, 15vw, 350px);
-    height: clamp(60px, 20vw, 350px);
+    width: clamp(100px, 15vw, 350px);
 }
 
 .recentContent {
-    font-size: 0.5em;
+    font-size: clamp(0.5em, 1.0vw, 1.1em);
     padding: 0;
     width: 50%;
 }
@@ -58,6 +63,79 @@
     font-size: 0.7em;
 }
 
-.contentContainer {
+.principal {
+    height: clamp(210px, 25vw, 700px);
+    padding: clamp(12px, 1.5vw, 50px);
+    background-color: #f7f7f7;
+    border-radius: 8px;
     overflow: hidden;
+}
+
+.principalTitle {
+    font-size: clamp(0.7em, 2.2vw, 2.4em);
+    margin: 0;
+    padding: 0;
+    font-family: 'Old Standard TT', serif;
+    font-weight: 600;
+}
+
+.principalImage {
+    width: 50%;
+    background-image: url("../assets/facebook.jpg");
+    background-size: cover;
+    height: 100%;
+}
+
+.principalInfo {
+    font-size: clamp(0.5em, 1.2vw, 1.2em);
+    padding: 0;
+    margin: 0;
+    font-family: 'Old Standard TT', serif;
+}
+
+.secondaryTitle {
+    font-size: clamp(0.7em, 1.3vw, 2.4em);
+    display: inline-block;
+}
+
+.secondaryInfo {
+    font-size: clamp(0.4em, 1vw, 1.2em);
+    padding: 0;
+    margin: 0;
+    font-family: 'Old Standard TT', serif;
+}
+
+.secondary {
+    background-color: #f7f7f7;
+    padding: 11px;
+}
+
+.secondaryBundle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 20px;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.paragraph {
+    height: 40%;
+}
+
+@media (min-width: 576px) {
+    .principal {
+        width: 50%;
+    }
+    .secondaryBundle {
+        width: 50%;
+    }
+
+    .newsContainer {
+        height: clamp(280px, 27vw, 430px);
+    }
+
+    .principal {
+        height: clamp(280px, 27vw, 430px);
+    }
 }
