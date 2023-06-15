@@ -9,15 +9,34 @@ import Politics from './assets/politics.png'
 import Electronics from './assets/electronics.png'
 import Principal from './components/Principal'
 import Secondary from './components/Secondary'
+import PageList from './components/PageList'
+import MenuOverlay from './components/menuOverlay'
+import { useState } from 'react'
 
 function App() {
+
+  const [menuState, setMenuState] = useState("close")
+
+  function handleClick () {
+    if (menuState == "close") {
+      setMenuState("open")
+    }
+    else {
+      setMenuState("close")
+    }
+    console.log("clicado!")
+  }
 
   return (
     <>
       <div className="header">
         <div className=" normalWidth m-auto h-100 d-flex justify-content-between align-items-center">
           <img src={Logo} className="logo"/>
-          <MenuIcon/>
+          <div onClick={() => handleClick()}>
+            <MenuIcon currentState={menuState}/>
+          </div>
+          <PageList/>
+            <MenuOverlay currentState={menuState}/>
         </div>
       </div>
       <div className="catContainer">
