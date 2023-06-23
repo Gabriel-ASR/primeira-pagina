@@ -40,7 +40,7 @@ const Layout = () => {
 
             <Outlet/>
 
-            <div className="Footer"></div>
+            {/* <div className="footer text-center d-flex align-items-center justify-content-center">Copyright Primeira Página &copy; 2023</div> */}
         </>
     )
 }

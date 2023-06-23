@@ -8,6 +8,18 @@ html, body {
     height: 100%;
 }
 
+body{ 
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 70px;
+  }
+  
+
+body::after {
+    display: block;
+    height: 70px;
+}
+
 .header {
     height: clamp(70px, 5.5vw, 130px);
     background-color: #2E294E;
@@ -59,6 +71,10 @@ html, body {
 
 .normalWidth {
     width: clamp(340px, 95%, 2134px);
+}
+
+.smallWidth {
+    width: clamp(300px, 75%, 2134px);
 }
 
 .recentCard {
@@ -149,6 +165,7 @@ html, body {
     font-size: clamp(0.9em, 1.1vw, 1.7em);
 }
 
+
 .menuOverlay {
     top: 0;
     right: 0;
@@ -180,15 +197,15 @@ html, body {
 .openOverlay > ul {
     list-style-type: none;
     color: #fff;
-    height: clamp(150px, 40vw, 170px);
+    height: clamp(200px, 40vw, 170px);
 }
 
 .openOverlay > ul > li {
     height: 100%;
     display: flex;
     justify-content: center;
-    border: white 1px solid;
     align-items: center;
+    background-color: #473f7c;
 }
 
 .aboutParagraph {
@@ -200,8 +217,48 @@ html, body {
     height: clamp(300px, 20vw, 400px);
 }
 
+
 .aboutImage1 {
-    
+    background-image: url("../assets/image1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.aboutImage2 {
+    background-image: url("../assets/image-2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.footer {
+    width: 100%;
+    background-color: #2274A5;
+    min-height: 70px;
+    margin-top: 20px;
+    color: white;
+    font-size: 1.2em;
+    position: absolute;
+    bottom: 0;
+}
+
+.textInput {
+    border: none;
+    outline: none;
+    background-color: rgb(228, 228, 228);
+}
+
+.submitButton {
+    border: none;
+    background-color: #2274A5;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+}
+
+.navLink {
+    text-decoration: none;
+    color: white;
 }
 
 @media (min-width: 576px) {
@@ -226,6 +283,16 @@ html, body {
 
     .lineContainer p, .lineContainer div {
         width: 50%;
+    }
+
+    .submitButton {
+        width: clamp(150px, 40%, 250px);
+        border: none;
+        background-color: #2274A5;
+        padding: 20px;
+        font-size: 1.4em;
+        font-weight: bold;
+        color: white;
     }
 }
 
