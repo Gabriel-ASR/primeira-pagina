@@ -10,7 +10,7 @@ const CategoryNews = ({ title, author, content, path }) => {
                 <span className="filterAuthor align-self-sm-center">{author}</span>
             </div>
             <p className="filterContent mt-3">{content}</p>
-                <span><Link to={path}>Ler Mais...</Link></span>
+                <span><Link className="blackNavLink recentLink" to={path}>Ler Mais...</Link></span>
         </div>
 
     )
