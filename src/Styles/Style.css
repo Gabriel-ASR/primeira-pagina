@@ -299,11 +299,24 @@ body::after {
 }
 
 .filterTitle {
-    font-size: clamp(0.9em, 1.5vw, 2.2em);
+    font-size: clamp(1em, 1.5vw, 2.2em);
 }
 
 .filterContainer {
     background-color: #dfdfdf;
+}
+
+.filterAuthor {
+    font-size: clamp(0.7em, 0.9vw, 1.2em);
+}
+
+.filterContent {
+    font-size: clamp(0.8em, 1.1vw, 1.6em);
+}
+
+.recentLink {
+    font-size: clamp(1.2em, 1.0vw, 1.4em);
+    color: #2274A5;
 }
 
 @media (min-width: 576px) {

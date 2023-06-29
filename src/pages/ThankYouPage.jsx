@@ -3,7 +3,7 @@ import obrigado from '../assets/fe.png'
 
 const ThankYouPage = () => {
     return(
-        <div className="justify-content-center d-flex flex-column">
+        <div className="justify-content-center d-flex flex-column smallWidth mx-auto">
             <div className="d-flex justify-content-center mt-5">
                 <img src={obrigado} width="100px"/>
             </div>

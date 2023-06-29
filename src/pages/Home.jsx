@@ -32,19 +32,19 @@ function Home() {
       <div className=" w-100 mt-3 mt-sm-4 mt-md-5 contentContainer">
         <div className="normalWidth m-auto d-flex gap-3 justify-content-around">
           <div className="">
-            <RecentCard title="Turismo" content="lorem ipsum dolor sit amet, consectetur adipiscing elit" image={Turismo}/>
+            <RecentCard title="Turismo" content="lorem ipsum dolor sit amet, consectetur adipiscing elit" image={Turismo} path="/resort-de-luxo-inaugurado"/>
           </div>
           <div className="">
-            <RecentCard title="Turismo" content="lorem ipsum dolor sit amet, consectetur adipiscing elit" image={Sports}/>
+            <RecentCard title="Esportes" content="lorem ipsum dolor sit amet, consectetur adipiscing elit" image={Sports} path="/atleta-quebra-recorde-nacional"/>
           </div>
           <div className="">
-            <RecentCard title="Turismo" content="lorem ipsum dolor sit amet, consectetur adipiscing elit" image={Politics}/>
+            <RecentCard title="Política" content="lorem ipsum dolor sit amet, consectetur adipiscing elit" image={Politics} path="/reforma-sistema-eleitoral"/>
           </div>
           <div className="d-none d-sm-block">
-            <RecentCard title="Turismo" content="lorem ipsum dolor sit amet, consectetur adipiscing elit" image={Science}/>
+            <RecentCard title="Ciência" content="lorem ipsum dolor sit amet, consectetur adipiscing elit" image={Science} path="/nova-especie-dinossauro"/>
           </div>
           <div className="d-none d-md-block">
-            <RecentCard title="Turismo" content="lorem ipsum dolor sit amet, consectetur adipiscing elit" image={Electronics}/>
+            <RecentCard title="Tecnologia" content="lorem ipsum dolor sit amet, consectetur adipiscing elit" image={Electronics} path="/dispositivo-wearable-monitora-saude"/>
           </div>
         </div>
         <div className="mt-4 normalWidth m-auto">

@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom"
 
-const RecentCard = (props) => {
+const RecentCard = ({image, title, content, path}) => {
     return(
         <div className="d-flex align-items-center gap-2 recentCard">
-            <img className="w-50" src={props.image}/>
+            <img className="w-50" src={image}/>
             <div className="recentContent">
-                <h5>{props.title}</h5>
+                <h5>{title}</h5>
                 <div>
-                    <p>{props.content}</p> 
+                    <p>{content}</p> 
                 </div>
-                <p><Link className="blackNavLink" to="">Ler Mais...</Link></p>
+                <p><Link className="blackNavLink recentLink" to={path}>Ler Mais...</Link></p>
             </div>
         </div>
     )

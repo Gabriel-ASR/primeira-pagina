@@ -1,9 +1,9 @@
-import { Outlet } from "react-router-dom"
-import Logo from '../assets/logo.png'
-import MenuIcon from "../components/MenuIcon"
-import PageList from "../components/PageList"
-import MenuOverlay from "../components/menuOverlay"
-import CatList from "../components/CatList"
+import { Link, Outlet } from "react-router-dom"
+import Logo from '../../assets/logo.png'
+import MenuIcon from "../../components/MenuIcon"
+import PageList from "../../components/PageList"
+import MenuOverlay from "../../components/menuOverlay"
+import CatList from "../../components/CatList"
 import { useState } from "react"
 
 const Layout = () => {
@@ -24,7 +24,7 @@ const Layout = () => {
         <>
             <div className="header">
                 <div className=" normalWidth m-auto h-100 d-flex justify-content-between align-items-center">
-                    <img src={Logo} className="logo"/>
+                    <Link to="/"><img src={Logo} className="logo"/></Link>
                     <div onClick={() => handleClick()}>
                         <MenuIcon currentState={menuState}/>
                     </div>

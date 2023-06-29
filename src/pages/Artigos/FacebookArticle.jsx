@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import FacebookInfo from "../components/FacebookInfo"
+import FacebookInfo from "../../components/FacebookInfo"
 
 const FacebookArticle = () => {
 
