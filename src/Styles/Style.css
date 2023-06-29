@@ -22,7 +22,7 @@ body::after {
 }
 
 .header {
-    height: clamp(70px, 5.5vw, 130px);
+    height: clamp(70px, 4vw, 130px);
     background-color: #2E294E;
 }
 
