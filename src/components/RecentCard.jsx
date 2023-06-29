@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const RecentCard = (props) => {
     return(
         <div className="d-flex align-items-center gap-2 recentCard">
@@ -7,7 +9,7 @@ const RecentCard = (props) => {
                 <div>
                     <p>{props.content}</p> 
                 </div>
-                <p>Ler Mais...</p>
+                <p><Link className="blackNavLink" to="">Ler Mais...</Link></p>
             </div>
         </div>
     )

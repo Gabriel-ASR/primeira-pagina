@@ -9,7 +9,7 @@ const ThankYouPage = () => {
             </div>
             <h1 className="text-center mt-4">Obrigado!</h1>
             <p className="text-center mt-4">Sua solicitação foi encaminhada à nossa equipe e em breve será respondida no e-mail informado.</p>
-            <p className="text-center"><Link to="/home">Voltar</Link></p>
+            <p className="text-center"><Link to="/">Voltar</Link></p>
         </div>
     )
 }

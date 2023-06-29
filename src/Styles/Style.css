@@ -8,12 +8,10 @@ html, body {
     height: 100%;
 }
 
-body{ 
-    min-height: 100vh;
-    position: relative;
-    padding-bottom: 70px;
-  }
-  
+.spacement {
+    width: 100%;
+    height: 20px;
+}
 
 body::after {
     display: block;
@@ -259,6 +257,53 @@ body::after {
 .navLink {
     text-decoration: none;
     color: white;
+}
+
+.blackNavLink {
+    text-decoration: none;
+    color: black;
+}
+
+.principalReadMore {
+    font-size: clamp(1em, 1.4vw, 1.7em);
+    color :#2789c2;
+}
+
+.principalBanner {
+    background-image: url("../assets/facebook.jpg");
+    background-size: cover;
+    background-position:center ;
+    height: clamp(200px, 20vw, 500px);
+    border-bottom: 8px solid #2E294E;
+}
+
+.secondaryBanner {
+    background-image: url("../assets/sports.png");
+    background-size: cover;
+    background-position:center ;
+    height: clamp(200px, 20vw, 500px);
+    border-bottom: 8px solid #2E294E;
+}
+
+.articleText {
+    text-align: justify;
+    font-size: clamp(1.2em, 1.2vw, 1.7em)
+}
+
+.newsTitle {
+    font-size: clamp(1.7em, 3vw, 5em)
+}
+
+.newsInfo {
+    color: #979797;
+}
+
+.filterTitle {
+    font-size: clamp(0.9em, 1.5vw, 2.2em);
+}
+
+.filterContainer {
+    background-color: #dfdfdf;
 }
 
 @media (min-width: 576px) {

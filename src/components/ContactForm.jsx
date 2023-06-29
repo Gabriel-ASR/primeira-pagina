@@ -30,7 +30,7 @@ const ContactForm = () => {
                 {errors.case?.type === "required" && <p className="text-danger">Digite sua solicitação!</p>}
                 {errors.case?.type === "minLength" && <p className="text-danger">Sua solicitação deve ter mais de 3 caracteres!</p>}
             </div>
-            <button type="submit" className="rounded submitButton mx-auto">ENVIAR</button>
+            <button type="submit" className="rounded submitButton mx-sm-auto">ENVIAR</button>
         </form>
     )
 }

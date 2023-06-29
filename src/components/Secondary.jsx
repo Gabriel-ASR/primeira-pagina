@@ -1,10 +1,18 @@
+import { useContext } from "react"
+import SecondaryContext from "../contexts/SecondaryContext"
+import { Link } from "react-router-dom"
+import { FiExternalLink } from 'react-icons/fi'
+
 const Secondary = () => {
+
+    const { newsAuthor, newsContent, newsDate, newsTitle } = useContext(SecondaryContext)
+
     return(
         <div className="d-flex flex-row secondary">
             <div className="d-flex flex-column">
-                <h1 className="secondaryTitle">Brasil Ganha Ouro em Atletismo</h1>
-                <span className="secondaryInfo">por Domingues Rodrigues | 23/05/2023</span>
-                <p className="secondaryInfo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius reprehenderit vero omnis nemo doloribus exercitationem praesentium quidem autem tempora beatae, provident ad vitae?</p>
+                <h1 className="secondaryTitle"><Link className="blackNavLink" to="/brasil-ganha-ouro-em-atletismo">{newsTitle}<FiExternalLink /></Link></h1>
+                <span className="secondaryInfo">{`${newsAuthor} | ${newsDate}`}</span>
+                <p className="secondaryInfo">{`${newsContent}`}</p>
             </div>
         </div>
     )
