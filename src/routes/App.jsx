@@ -1,4 +1,4 @@
-import { Route, BrowserRouter, Routes } from "react-router-dom"
+import { Route, BrowserRouter, Routes, useNavigate } from "react-router-dom"
 import { PrincipalContextProvider } from "../contexts/PrincipalContext"
 import { SecondaryContextProvider } from "../contexts/SecondaryContext"
 import Layout from "../pages/Layout/Layout"
@@ -85,12 +85,19 @@ import DesenvolvedoresArticle from "../pages/Artigos/Jogos/DesenvolvedoresArticl
 import EsportsArticle from "../pages/Artigos/Jogos/EsportsArticle"
 import IndieArticle from "../pages/Artigos/Jogos/IndieArticle"
 import GameplayArticle from "../pages/Artigos/Jogos/GameplayArticle"
+import Login from "../pages/Auth/Login"
+import Register from "../pages/Auth/Register"
+import NewArticle from "../pages/newArticle"
+import AddedArticle from "../pages/AddedArticle"
+import NotFound from '../pages/NotFound'
 
 
 const App = () => {
+
     return(
         <BrowserRouter>
       <Routes>
+
         <Route path="/" element={<Layout/>}>
 
           <Route index element={
@@ -201,7 +208,19 @@ const App = () => {
           <Route path="/jogo-indie-ganha-destaque" element={<IndieArticle/>}/>
           <Route path="/video-gameplay-aguardado" element={<GameplayArticle/>}/>
 
+          {/* Nova Notícia */}
+
+          <Route path="/nova-noticia" element={<NewArticle/>}/>
+
+          <Route path="/:currentId" element={<AddedArticle/>}/>
+
         </Route>
+
+        {/* Login e registro */}
+
+        <Route path="login" element={<Login/>}/>
+        <Route path="registro" element={<Register/>}/>
+
       </Routes>
     </BrowserRouter>
     )

@@ -1,8 +1,6 @@
 import { useForm } from "react-hook-form"
 import { useNavigate } from "react-router-dom"
 
-useForm
-
 const ContactForm = () => {
 
     const { register, handleSubmit, formState: { errors } } = useForm()
