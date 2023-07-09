@@ -35,7 +35,7 @@ const Register = () => {
 
     return(
         <div className="authContainer d-flex align-items-center">
-            <form className="d-flex flex-column authCard mx-auto p-4 justify-content-between" onSubmit={handleSubmit(handleActionSubmit)}>
+            <form className="d-flex flex-column authCard mx-auto p-4 justify-content-between rounded" onSubmit={handleSubmit(handleActionSubmit)}>
                 <div className="d-flex justify-content-center flex-column align-items-center gap-3 mt-3">
                     <h1 className="text-center actionTitle">Registro</h1>
                     <img src={registro} className="actionIcon"/>

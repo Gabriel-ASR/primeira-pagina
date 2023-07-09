@@ -1,0 +1,9 @@
+A conexão com o backend foi feita de maneira diferente da ensinada nas aulas.
+
+Foi seguido o tutorial no próprio site do firebase, até que as chamadas e respostas funcionassem de forma esperada.
+
+Peço por gentileza que leve em consideração que nem eu, nem vários alunos de ambas as turmas de ADS passaram pela disciplina de backend antes de ter aulas com o senhor.
+
+Todos os métodos de chegar ao objetivo de fazer as features do projeto funcionarem foram aprendidas durante o próprio desenvolvimento, como imagino que deve ter acontecido com todos os outros que ainda não tiveram contato com backend.
+
+Portanto, é possível que a solução que encontrei para fazer tudo funcionar não seja a melhor e nem a mais segura.
